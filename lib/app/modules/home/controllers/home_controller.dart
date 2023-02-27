@@ -7,9 +7,6 @@ import 'package:sekolah_project/app/modules/login/views/login_view.dart';
 
 class HomeController extends GetxController {
 
-  //TODO: Implement HomeController
-  // final count = 0.obs;
-
   late Timer _pindah;
 
   final authToken = GetStorage();
@@ -17,7 +14,7 @@ class HomeController extends GetxController {
   @override
   void onInit() {
     
-    _pindah = Timer.periodic(
+   _pindah = Timer.periodic(
       const Duration(seconds: 4),
       (timer) => authToken.read('token') == null
           ? Get.off(
@@ -39,5 +36,4 @@ class HomeController extends GetxController {
     super.onClose();
   }
 
-  // void increment() => count.value++;
 }

@@ -1,5 +1,6 @@
 class BaseUrl {
   static String auth = 'https://demo-elearning.smkassalaambandung.sch.id/api/login';
+  // static String auth = 'http://127.0.0.1:8000/api/login';
   static String headline = 
       'https://gist.githubusercontent.com/olipiskandar/3d4c85f5a29ecf847f0abf3bb00a1c36/raw/ad7fbfae0dd5a8d2c08303f12401a6a2f22bcb52/headline.json';
   static String entertainment = 
